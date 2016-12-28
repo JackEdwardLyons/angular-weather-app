@@ -8,16 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+// import Modules
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+// import JSONP module for HTTP requests    
+var http_1 = require('@angular/http');
+// import Components
 var app_component_1 = require('./app.component');
+var weather_component_1 = require('./weather_widget/component/weather.component');
+// import Pipes
+var speed_unit_pipe_1 = require('./weather_widget/pipe/speed-unit.pipe');
+var temp_unit_pipe_1 = require('./weather_widget/pipe/temp-unit.pipe');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent],
+            imports: [platform_browser_1.BrowserModule, http_1.JsonpModule, http_1.HttpModule],
+            declarations: [app_component_1.AppComponent, weather_component_1.WeatherComponent, speed_unit_pipe_1.SpeedUnitPipe, temp_unit_pipe_1.TempUnitPipe],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

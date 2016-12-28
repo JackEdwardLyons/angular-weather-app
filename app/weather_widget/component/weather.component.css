@@ -1,0 +1,66 @@
+.card {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: background-color 2s ease;
+}
+
+.card,
+.card-header,
+.card-footer {
+    border: none;
+    border-radius: 0;
+}
+
+.card-header,
+.card-footer {
+    background-color: transparent;
+    padding: 1rem .5rem;
+    text-align: center;
+}
+
+#location-icon {
+    padding-right: 0.2rem;
+}
+
+.card-footer {
+    padding-bottom: 0.5rem;
+}
+
+#detail-row {
+    font-size: 0.95rem;
+}
+
+#helper-row {
+    padding-top: 1rem;
+}
+
+
+.card-block {
+    padding: 1.5rem 0;
+}
+
+#indicator {
+    height: 165px;
+    position: relative;
+}
+
+#indicator > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+}
+
+canvas {
+    margin-bottom: 1rem;
+    max-width: 250px;
+}
+
+p { 
+    margin: 0.2rem;
+}
+
+p:not(.unit-label) {
+    text-transform: uppercase; 
+}
